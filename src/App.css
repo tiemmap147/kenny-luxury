@@ -70,6 +70,24 @@
 	background-color: #f4cc72;
 	bottom: -17px;
 }
+.border-custom {
+	border: 1px solid;
+	border-image: radial-gradient(
+			circle,
+			rgba(244, 204, 114, 1) 45%,
+			rgba(0, 0, 0, 1) 83%,
+			rgba(0, 0, 0, 1) 100%,
+			rgba(244, 204, 114, 1) 100%
+		)
+		0 1 1 0;
+	border-image: radial-gradient(
+			circle,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(0, 0, 0, 1) 54%,
+			rgba(244, 204, 114, 1) 100%
+		)
+		1 0 0 0;
+}
 
 @keyframes App-logo-spin {
 	from {
