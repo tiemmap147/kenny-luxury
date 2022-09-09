@@ -1,12 +1,12 @@
 import React from "react";
 
-export const Gallery = () => {
+export const Title = ({ title = "Bộ sưu tập" }) => {
 	return (
-		<div className='mt-10 '>
+		<div className='py-10 '>
 			<div className='w-fit mx-auto'>
 				<div className='border p-5'>
 					<p className='text-[#FFFFFF] text-[22px] leading-8'>
-						Bộ sưu tập
+						{title}
 					</p>
 				</div>
 			</div>

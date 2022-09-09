@@ -2,16 +2,18 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Featured } from "./components/Featured";
-import { Gallery } from "./components/Gallery";
+
 import { Categories } from "./components/Categories";
+import { Title } from "./components/Title";
+import { Hot } from "./components/Hot";
 
 const Home = () => {
 	return (
 		<div className='container'>
 			<Header />
 			<Featured />
-			<Gallery />
 			<Categories />
+			<Hot />
 		</div>
 	);
 };
