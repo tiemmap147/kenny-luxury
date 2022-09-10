@@ -3,7 +3,7 @@ import React from "react";
 export const Footer = () => {
 	return (
 		<div className='mb-[54px]'>
-			<div className='w-full h-[218px] mt-20'>
+			<div className='w-full h-[218px] '>
 				<img
 					className='w-full h-full object-cover'
 					src='images/map.png'

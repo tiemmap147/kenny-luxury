@@ -38,12 +38,12 @@ export const Helper = () => {
 						</div>
 
 						<div className='transition-all ease-in-out delay-150 w-full flex gap-2 my-2 justify-items-stretch'>
-							<button className='w-full uppercase px-5 py-2 bg-[#F4CC72] text-black rounded-md'>
+							<button className='w-full font-bold uppercase px-5 py-2 bg-[#F4CC72] text-black rounded-md'>
 								Gửi ngay
 							</button>
 							<button
 								onClick={toogle}
-								className='w-full uppercase px-5 py-2 border border-[#F4CC72] text-[#F4CC72] bg-[#000000] rounded-md'>
+								className='w-full font-bold uppercase px-5 py-2 border border-[#F4CC72] text-[#F4CC72] bg-[#000000] rounded-md'>
 								HỦy
 							</button>
 						</div>

@@ -30,7 +30,7 @@ export const News = () => {
 		},
 	];
 	return (
-		<div className='w-full  bg-[#1A1A1A] text-white'>
+		<div className='w-full  bg-[#191919] text-white pb-12'>
 			<Title title='TIN TỨC' />
 
 			<Fade bottom>

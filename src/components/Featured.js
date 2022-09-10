@@ -13,14 +13,14 @@ export const Featured = () => {
 			price: "705.000.000 đ",
 		},
 		{
-			backroundSrc: "/images/featuredMask.png",
-			imgSrc: "images/featuredWatch.png",
+			backroundSrc: "/images/mask1.png",
+			imgSrc: "images/watch1.png",
 			name: "Round Dial Black Automatic",
 			price: "805.000.000 đ",
 		},
 		{
-			backroundSrc: "/images/featuredMask.png",
-			imgSrc: "images/featuredWatch.png",
+			backroundSrc: "/images/mask3.png",
+			imgSrc: "images/watch3.png",
 			name: "Integrated King Gold Ceramic",
 			price: "995.000.000 đ",
 		},

@@ -4,7 +4,7 @@ export const Title = ({ title = "Bộ sưu tập" }) => {
 	return (
 		<div className='py-10 '>
 			<div className='w-fit mx-auto'>
-				<div className='border-custom p-5'>
+				<div className='border-custom py-2 px-5'>
 					<Slide top>
 						<p className='text-[#FFFFFF] text-[22px] leading-8'>
 							{title}
