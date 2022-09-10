@@ -65,7 +65,7 @@ export const Brand = () => {
 	};
 
 	return (
-		<div className='w-full  bg-[#1A1A1A] text-white'>
+		<div className='w-full   text-white'>
 			<Title title='THƯƠNG HIỆU' />
 			<div className='tabs-brand  '>
 				<ul className=' min-w-[417px]  pl-5'>
