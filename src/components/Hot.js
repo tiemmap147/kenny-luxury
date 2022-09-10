@@ -3,6 +3,8 @@ import { HotCard } from "./HotCard";
 import { Title } from "./Title";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Fade from "react-reveal/Fade";
+
 export const Hot = () => {
 	const WATCH_DATA = [
 		{
@@ -50,20 +52,22 @@ export const Hot = () => {
 					</li>
 				</ul>
 			</div>
-			<div className='w-full py-5 pl-5'>
-				<Swiper speed={800} spaceBetween={16} slidesPerView={1.5}>
-					{WATCH_DATA.map((item) => (
-						<SwiperSlide>
-							<HotCard
-								backroundSrc={item.backroundSrc}
-								imgSrc={item.imgSrc}
-								name={item.name}
-								price={item.price}
-							/>
-						</SwiperSlide>
-					))}
-				</Swiper>
-			</div>
+			<Fade bottom>
+				<div className='w-full py-5 pl-5'>
+					<Swiper speed={800} spaceBetween={16} slidesPerView={1.5}>
+						{WATCH_DATA.map((item) => (
+							<SwiperSlide>
+								<HotCard
+									backroundSrc={item.backroundSrc}
+									imgSrc={item.imgSrc}
+									name={item.name}
+									price={item.price}
+								/>
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</div>
+			</Fade>
 		</div>
 	);
 };

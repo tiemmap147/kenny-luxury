@@ -3,6 +3,7 @@ import { HotCard } from "./HotCard";
 import { Title } from "./Title";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Fade from "react-reveal/Fade";
 export const Brand = () => {
 	const WATCH_DATA = [
 		{
@@ -67,6 +68,7 @@ export const Brand = () => {
 	return (
 		<div className='w-full   text-white'>
 			<Title title='THƯƠNG HIỆU' />
+
 			<div className='tabs-brand  '>
 				<ul className=' min-w-[417px]  pl-5'>
 					<Swiper speed={800} spaceBetween={0} slidesPerView={3.8}>
@@ -89,20 +91,22 @@ export const Brand = () => {
 					</Swiper>
 				</ul>
 			</div>
-			<div className='w-full py-5 pl-5'>
-				<Swiper spaceBetween={16} slidesPerView={1.5}>
-					{WATCH_DATA.map((item) => (
-						<SwiperSlide>
-							<HotCard
-								backroundSrc={item.backroundSrc}
-								imgSrc={item.imgSrc}
-								name={item.name}
-								price={item.price}
-							/>
-						</SwiperSlide>
-					))}
-				</Swiper>
-			</div>
+			<Fade bottom>
+				<div className='w-full py-5 pl-5'>
+					<Swiper spaceBetween={16} slidesPerView={1.5}>
+						{WATCH_DATA.map((item) => (
+							<SwiperSlide>
+								<HotCard
+									backroundSrc={item.backroundSrc}
+									imgSrc={item.imgSrc}
+									name={item.name}
+									price={item.price}
+								/>
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</div>
+			</Fade>
 		</div>
 	);
 };

@@ -3,6 +3,8 @@ import { HotCard } from "./HotCard";
 import { Title } from "./Title";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Fade from "react-reveal/Fade";
+
 import { NewsCard } from "./NewsCard";
 export const News = () => {
 	const NEWS_DATA = [
@@ -30,19 +32,22 @@ export const News = () => {
 	return (
 		<div className='w-full  bg-[#1A1A1A] text-white'>
 			<Title title='TIN TỨC' />
-			<div className='w-full py-5 pl-5'>
-				<Swiper speed={800} spaceBetween={16} slidesPerView={1.5}>
-					{NEWS_DATA.map((item) => (
-						<SwiperSlide>
-							<NewsCard
-								backroundSrc={item.backroundSrc}
-								title={item.title}
-								desc={item.desc}
-							/>
-						</SwiperSlide>
-					))}
-				</Swiper>
-			</div>
+
+			<Fade bottom>
+				<div className='w-full py-5 pl-5'>
+					<Swiper speed={800} spaceBetween={16} slidesPerView={1.5}>
+						{NEWS_DATA.map((item) => (
+							<SwiperSlide>
+								<NewsCard
+									backroundSrc={item.backroundSrc}
+									title={item.title}
+									desc={item.desc}
+								/>
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</div>
+			</Fade>
 		</div>
 	);
 };

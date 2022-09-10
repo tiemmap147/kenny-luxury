@@ -13,8 +13,8 @@ export const FeaturedCard = ({
 		<div
 			style={{
 				backgroundImage: `url(${backroundSrc})`,
-				animationName: "fade-in",
-				animationDuration: "5s",
+				// animationName: "fade-in",
+				// animationDuration: "5s",
 			}}
 			className={` h-full flex flex-col items-center  justify-center bg-center bg-cover bg-no-repeat text-white`}>
 			<div className=''>
