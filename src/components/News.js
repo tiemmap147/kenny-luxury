@@ -31,7 +31,7 @@ export const News = () => {
 		<div className='w-full  bg-[#1A1A1A] text-white'>
 			<Title title='TIN TỨC' />
 			<div className='w-full py-5 pl-5'>
-				<Swiper spaceBetween={16} slidesPerView={1.5}>
+				<Swiper speed={800} spaceBetween={16} slidesPerView={1.5}>
 					{NEWS_DATA.map((item) => (
 						<SwiperSlide>
 							<NewsCard

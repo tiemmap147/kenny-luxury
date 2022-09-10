@@ -51,7 +51,7 @@ export const Hot = () => {
 				</ul>
 			</div>
 			<div className='w-full py-5 pl-5'>
-				<Swiper spaceBetween={16} slidesPerView={1.5}>
+				<Swiper speed={800} spaceBetween={16} slidesPerView={1.5}>
 					{WATCH_DATA.map((item) => (
 						<SwiperSlide>
 							<HotCard

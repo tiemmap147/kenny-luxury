@@ -69,7 +69,7 @@ export const Brand = () => {
 			<Title title='THƯƠNG HIỆU' />
 			<div className='tabs-brand  '>
 				<ul className=' min-w-[417px]  pl-5'>
-					<Swiper spaceBetween={0} slidesPerView={3.8}>
+					<Swiper speed={800} spaceBetween={0} slidesPerView={3.8}>
 						{BRANDS.map((brand, index) => (
 							<SwiperSlide>
 								<li

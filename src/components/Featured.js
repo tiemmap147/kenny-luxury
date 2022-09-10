@@ -29,6 +29,7 @@ export const Featured = () => {
 	return (
 		<div className='w-full h-[545px] bg-[#1A1A1A]'>
 			<Swiper
+				speed={800}
 				onSwiper={setSwiper}
 				pagination={true}
 				modules={[Pagination]}
