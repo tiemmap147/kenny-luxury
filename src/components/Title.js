@@ -26,11 +26,11 @@ export const Title = ({ title = "Bộ sưu tập" }) => {
 					<Bounce bottom>
 						<div className='absolute  flex mx-auto w-[100px] h-[1px] bottom-0 left-0 right-0  bg-gradient-to-r from-[#000000] via-[#F4CC72] to-[#000000]'></div>
 					</Bounce>
-					{/* <Slide top> */}
-					<p className=' text-[#FFFFFF] text-[22px] leading-8 '>
-						{title}
-					</p>
-					{/* </Slide> */}
+					<Slide top>
+						<p className=' text-[#FFFFFF] text-[22px] leading-8 '>
+							{title}
+						</p>
+					</Slide>
 				</div>
 			</div>
 		</div>

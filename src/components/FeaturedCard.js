@@ -21,7 +21,7 @@ export const FeaturedCard = ({
 				}
 			}
 			className={`relative h-full flex flex-col items-center  justify-center bg-center bg-cover bg-no-repeat text-white`}>
-			<Fade when={slideIndex} duration={900} spy appear>
+			<Fade when={slideIndex} duration={2000} spy appear ssrFadeout>
 				<img
 					src={backroundSrc}
 					className='absolute w-full h-full -z-50 bg-transparent object-cover opacity-0'
