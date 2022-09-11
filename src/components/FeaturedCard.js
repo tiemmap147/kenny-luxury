@@ -28,7 +28,7 @@ export const FeaturedCard = ({
 			<Fade
 				when={touchIndex || slideIndex === 0}
 				duration={1000}
-				delay={400}
+				delay={600}
 				spy
 				appear
 				ssrFadeout>
