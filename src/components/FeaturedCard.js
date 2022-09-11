@@ -21,7 +21,7 @@ export const FeaturedCard = ({
 				}
 			}
 			className={`relative h-full flex flex-col items-center  justify-center bg-center bg-cover bg-no-repeat text-white`}>
-			<Fade when={slideIndex} duration={900} delay={500} spy appear>
+			<Fade when={slideIndex} duration={900} spy appear>
 				<img
 					src={backroundSrc}
 					className='absolute w-full h-full -z-50 bg-transparent object-cover opacity-0'
@@ -30,7 +30,7 @@ export const FeaturedCard = ({
 			<div className=''>
 				<img className='h-[320px]' src={imgSrc} />
 			</div>
-			<Fade bottom when={slideIndex} delay={600} spy appear>
+			<Fade bottom when={slideIndex} delay={400} spy appear>
 				<div className='flex flex-col max-w-[334px] items-center uppercase '>
 					<span className='font-bold text-[32px] text-center'>
 						{name}
