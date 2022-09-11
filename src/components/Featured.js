@@ -25,12 +25,13 @@ export const Featured = () => {
 			price: "995.000.000 đ",
 		},
 	];
-	const [swiper, setSwiper] = useState(null);
+	const [slideIndex, setSlideIndex] = useState(-1);
+
 	return (
 		<div className='w-full h-[545px] bg-[#1A1A1A]'>
 			<Swiper
 				speed={800}
-				onSwiper={setSwiper}
+				onSlideChange={(e) => setSlideIndex(e.activeIndex + 1)}
 				pagination={true}
 				modules={[Pagination]}
 				spaceBetween={0}
@@ -39,6 +40,7 @@ export const Featured = () => {
 				{FEATURED_DATA.map((item) => (
 					<SwiperSlide>
 						<FeaturedCard
+							slideIndex={slideIndex}
 							backroundSrc={item.backroundSrc}
 							name={item.name}
 							imgSrc={item.imgSrc}

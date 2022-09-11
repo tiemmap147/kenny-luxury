@@ -139,14 +139,42 @@ body {
 @keyframes fade-in {
 	0% {
 		background: none;
+		background-color: rgba(0, 0, 0, 0);
+		background-blend-mode: lighten;
 	}
-	25% {
+	/* 25% {
+		background: image();
+		background-color: rgba(0, 0, 0, 0.2);
+		background-blend-mode: lighten;
 	}
 	50% {
+		background: image();
+		background-color: rgba(0, 0, 0, 0.5);
+		background-blend-mode: lighten;
 	}
-	75% {
+	60% {
+		background: image();
+		background-color: rgba(0, 0, 0, 0.6);
+		background-blend-mode: lighten;
 	}
+	70% {
+		background: image();
+		background-color: rgba(0, 0, 0, 0.7);
+		background-blend-mode: lighten;
+	}
+	80% {
+		background: image();
+		background-color: rgba(0, 0, 0, 0.8);
+		background-blend-mode: lighten;
+	}
+	90% {
+		background: image();
+		background-color: rgba(0, 0, 0, 0.9);
+		background-blend-mode: lighten;
+	} */
 	100% {
 		background: image();
+		background-color: rgba(0, 0, 0, 1);
+		background-blend-mode: lighten;
 	}
 }

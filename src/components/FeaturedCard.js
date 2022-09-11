@@ -8,19 +8,29 @@ export const FeaturedCard = ({
 	imgSrc = "images/featuredWatch.png",
 	name = "Integrated King Gold Ceramic",
 	price = "705.000.000 đ",
+	slideIndex = 0,
 }) => {
 	return (
 		<div
-			style={{
-				backgroundImage: `url(${backroundSrc})`,
-				// animationName: "fade-in",
-				// animationDuration: "5s",
-			}}
-			className={` h-full flex flex-col items-center  justify-center bg-center bg-cover bg-no-repeat text-white`}>
+			style={
+				{
+					// backgroundImage: `url(${backroundSrc})`,
+					// animationName: "fade-in",
+					// animationDuration: ".5s",
+					// animationTimingFunction: "linear",
+				}
+			}
+			className={`relative h-full flex flex-col items-center  justify-center bg-center bg-cover bg-no-repeat text-white`}>
+			<Zoom when={slideIndex} delay={500} spy appear>
+				<img
+					src={backroundSrc}
+					className='absolute w-full h-full -z-50 bg-transparent object-cover '
+				/>
+			</Zoom>
 			<div className=''>
 				<img className='h-[320px]' src={imgSrc} />
 			</div>
-			<Fade right ssrReveal>
+			<Fade bottom when={slideIndex} delay={600} spy appear>
 				<div className='flex flex-col max-w-[334px] items-center uppercase '>
 					<span className='font-bold text-[32px] text-center'>
 						{name}
