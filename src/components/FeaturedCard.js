@@ -26,7 +26,7 @@ export const FeaturedCard = ({
 			}
 			className={`relative h-full flex flex-col items-center  justify-center bg-center bg-cover bg-no-repeat text-white`}>
 			<Fade
-				when={touchIndex || slideIndex}
+				when={touchIndex || slideIndex === 0}
 				duration={1000}
 				delay={400}
 				spy
