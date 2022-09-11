@@ -21,12 +21,12 @@ export const FeaturedCard = ({
 				}
 			}
 			className={`relative h-full flex flex-col items-center  justify-center bg-center bg-cover bg-no-repeat text-white`}>
-			<Zoom when={slideIndex} delay={500} spy appear>
+			<Fade when={slideIndex} duration={900} delay={500} spy appear>
 				<img
 					src={backroundSrc}
-					className='absolute w-full h-full -z-50 bg-transparent object-cover '
+					className='absolute w-full h-full -z-50 bg-transparent object-cover opacity-0'
 				/>
-			</Zoom>
+			</Fade>
 			<div className=''>
 				<img className='h-[320px]' src={imgSrc} />
 			</div>
