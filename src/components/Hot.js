@@ -38,18 +38,23 @@ export const Hot = () => {
 	return (
 		<div className='w-full  bg-[#1A1A1A] text-white'>
 			<Title title='ĐANG HOT' />
-			<div className='tabs border-b border-[#464646] p-4'>
-				<ul className=' flex items-center justify-center gap-10'>
+			<div className='flex items-center justify-center border-b border-[#464646] p-4'>
+				<ul className='tabs w-fit flex items-center justify-center gap-10 '>
 					<li
-						className={activeTab === "tab1" ? "active" : ""}
+						className={`${
+							activeTab === "tab1" ? "active" : ""
+						} description_tab`}
 						onClick={handleTab1}>
 						CỔ ĐIỂN
 					</li>
 					<li
-						className={activeTab === "tab2" ? "active" : ""}
+						className={`${
+							activeTab === "tab2" ? "active" : ""
+						} description_tab`}
 						onClick={handleTab2}>
 						HIỆN ĐẠI
 					</li>
+					<li className='slider'></li>
 				</ul>
 			</div>
 			<Fade bottom>

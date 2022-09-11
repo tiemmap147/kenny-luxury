@@ -9,7 +9,11 @@ export const FeaturedCard = ({
 	name = "Integrated King Gold Ceramic",
 	price = "705.000.000 đ",
 	slideIndex = 0,
+	touchIndex,
 }) => {
+	console.log("slide: ", slideIndex);
+	console.log("touch: ", touchIndex);
+
 	return (
 		<div
 			style={
@@ -21,7 +25,13 @@ export const FeaturedCard = ({
 				}
 			}
 			className={`relative h-full flex flex-col items-center  justify-center bg-center bg-cover bg-no-repeat text-white`}>
-			<Fade when={slideIndex} duration={2000} spy appear ssrFadeout>
+			<Fade
+				when={touchIndex || slideIndex}
+				duration={1000}
+				delay={400}
+				spy
+				appear
+				ssrFadeout>
 				<img
 					src={backroundSrc}
 					className='absolute w-full h-full -z-50 bg-transparent object-cover opacity-0'
@@ -30,7 +40,12 @@ export const FeaturedCard = ({
 			<div className=''>
 				<img className='h-[320px]' src={imgSrc} />
 			</div>
-			<Fade bottom when={slideIndex} delay={400} spy appear>
+			<Fade
+				bottom
+				when={touchIndex || slideIndex === 0}
+				delay={400}
+				spy
+				appear>
 				<div className='flex flex-col max-w-[334px] items-center uppercase '>
 					<span className='font-bold text-[32px] text-center'>
 						{name}

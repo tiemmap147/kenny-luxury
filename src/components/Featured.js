@@ -25,15 +25,17 @@ export const Featured = () => {
 			price: "995.000.000 đ",
 		},
 	];
-	const [slideIndex, setSlideIndex] = useState(-1);
+	const [slideIndex, setSlideIndex] = useState(0);
+	const [touchIndex, setTouchIndex] = useState(0);
 
 	return (
 		<div className='w-full h-[545px] bg-[#1A1A1A]'>
 			<Swiper
 				speed={800}
-				onSlideChange={(e) => setSlideIndex(e.activeIndex + 1)}
+				onSlideChange={(e) => setSlideIndex(e.activeIndex)}
 				pagination={true}
 				modules={[Pagination]}
+				onTouchMove={(e) => setTouchIndex(e.touches.startX)}
 				spaceBetween={0}
 				slidesPerView={1}
 				className='h-full'>
@@ -41,6 +43,7 @@ export const Featured = () => {
 					<SwiperSlide>
 						<FeaturedCard
 							slideIndex={slideIndex}
+							touchIndex={touchIndex}
 							backroundSrc={item.backroundSrc}
 							name={item.name}
 							imgSrc={item.imgSrc}
